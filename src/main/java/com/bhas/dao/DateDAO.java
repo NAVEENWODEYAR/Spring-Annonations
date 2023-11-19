@@ -7,6 +7,12 @@ public class DateDAO
 {
 	public DateDAO()
 	{
-		System.out.println("DateDAO::Constructor");
+		System.out.println("\nDateDAO::Constructor");
+	}
+	
+	public boolean saveUser()
+	{
+		System.out.println("\nUser saved to db.........");
+		return true;
 	}
 }
