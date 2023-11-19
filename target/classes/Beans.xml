@@ -5,15 +5,8 @@
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
    
     <!-- bean definitions here -->
-    <bean id="credit" class="com.bhas.CreditCardPayment" />
-	<bean id="debit" class="com.bhas.DebitCardPayment"/>
-	<bean id="paymentProcessor" class="com.bhas.PaymentProcessor">
-		
-		<!-- Setter Injection -->
-		<property name="payment" ref="credit"/>   
-		
-		<!-- Constructor Injection -->
-		<constructor-arg name="payment" ref="credit"/>      
-	</bean>
+    <bean id="dateUtils" class="com.bhas.utils.DateUtils"/>
+	
+	
 
 </beans>
